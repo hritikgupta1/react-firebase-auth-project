@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0d1b2a; /* Dark blue background */
+  color: #fff;
+}
+
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Add heading styles */
+.app-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Auth Bar */
+.auth-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  background: #ffffff;
+  padding: 16px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Inputs */
+.auth-bar input[type="text"],
+.auth-bar input[type="password"] {
+  padding: 10px 12px;
+  width: 180px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Buttons - common */
+.auth-bar button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background-color 0.25s ease;
+}
+
+/* Primary button */
+.auth-bar .btn-primary {
+  background-color: #007BFF;
+  color: white;
+}
+
+.auth-bar .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Secondary button */
+.auth-bar .btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.auth-bar .btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Logout button */
+.auth-bar .btn-logout {
+  background-color: #dc3545;
+  color: white;
+}
+
+.auth-bar .btn-logout:hover {
+  background-color: #c82333;
+}
+
+
+/* Movie Form */
+.movie-form {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-form input[type="text"],
+.movie-form input[type="number"] {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 180px;
+}
+
+.movie-form label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.movie-form button {
+  padding: 10px 16px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.movie-form button:hover {
+  background: #0056b3;
+}
+
+/* Movie List */
+.movie-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.movie-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.movie-card h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.movie-card h2.green {
+  color: green;
+}
+
+.movie-card h2.red {
+  color: red;
+}
+
+.movie-card p {
+  margin: 10px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.actions input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.actions button {
+  padding: 8px 12px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  background: #218838;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .auth-bar,
+  .movie-form,
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .auth-bar input,
+  .movie-form input,
+  .actions input {
+    width: 100%;
+  }
+
+  .auth-bar button,
+  .movie-form button,
+  .actions button {
+    width: 100%;
+  }
+}
