@@ -1,5 +1,7 @@
 {
   "projects": {
     "default": "react-firebase-auth-proj-fa185"
-  }
+  },
+  "targets": {},
+  "etags": {}
 }
